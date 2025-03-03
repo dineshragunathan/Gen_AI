@@ -148,6 +148,8 @@ plt.title('Line of best fit')
 plt.plot(x, y , 'o' ,color='orange')
 y_hat = m1*x + m2
 plt.plot(x , y_hat)
+plt.xlabel('x')
+plt.ylabel('y')
 plt.legend(["data points" , "line of best fit"] , loc="lower right")
 plt.show()
 
@@ -185,6 +187,8 @@ plt.figure(6)
 plt.title('Gradient Descent vs Linear Search')
 plt.plot(iteration_value , loss_values_linear , color='red')
 plt.plot(iteration_value , loss_values , color='blue')
+plt.xlabel('Iterations')
+plt.ylabel('Cost (MSE)')
 plt.legend(['linear search' , 'gradient descent'])
 plt.show()
 
